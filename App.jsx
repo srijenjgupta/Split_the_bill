@@ -77,6 +77,7 @@ export default function App() {
       {/* Header */}
       <header className="bg-indigo-600 text-white p-4 shadow-md sticky top-0 z-10 flex justify-between items-center">
         <h1 className="text-xl font-bold" onClick={() => setView('home')}>BillSplitter</h1>
+        <span className="text-[10px] font-medium opacity-80 tracking-wide uppercase">by Srijen Gupta</span>
         {view === 'home' && (
            <div className="flex gap-2">
              <button onClick={() => setShowImport(true)} className="p-2 bg-indigo-500 rounded hover:bg-indigo-400" title="Import"><Upload size={18}/></button>
